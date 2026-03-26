@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Responsivo Colorido</title>
+    <style>
+       
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #93d1db; 
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+       
+        .container {
+            display: flex;
+            flex: 1;
+            flex-wrap: wrap; 
+        }
+
+        .sidebar {
+            background-color: #e1bbe9; 
+            flex: 1;
+            min-width: 200px;
+            padding: 20px;
+        }
+
+        .main-content {
+            background-color: #96a4df; 
+            color: white;
+            flex: 3;
+            min-width: 300px;
+            padding: 20px;
+        }
+
+        .extra-box {
+            background-color: #f3d0a0; 
+            flex: 1;
+            min-width: 200px;
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column; 
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Mi Sitio Web Responsivo</h1>
+    </header>
+
+    <div class="container">
+        <div class="sidebar">
+            <h3>Menú</h3>
+            <p>Este es el lateral lila.</p>
+        </div>
+        
+        <div class="main-content">
+            <h2>Contenido Principal</h2>
+            <p>Yo soy el área azul. En pantallas grandes soy ancho, en móviles me estiro.</p>
+             <img src="logo2.png" style="width:400px; float:right;"> 
+        </div>
+
+        <div class="extra-box">
+            <h3>Info Extra</h3>
+            <p>Un toque de de melon para variar.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>jhoana y azalia &copy; 2026</p>
+    </footer>
+
+</body>
+</html>
